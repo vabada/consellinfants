@@ -1,8 +1,12 @@
 html, body { height: 100%;  margin: 0; }
 
 #top {
-	background-color: #226999;
-	color:#ffffff;
+	background-color: #1D70B7;
+	color:white;
+}
+
+nav ul li a {
+	color:white;
 }
 
 #myCarousel{
@@ -17,7 +21,86 @@ iframe {
     height: 100%;
 }
 
-* {
+* {	
  font-size: 100%;
  font-family: 'Nunito', sans-serif;
 }
+
+@media (min-width: 1200px)
+.container{
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+#navbar-top {
+	width:100%;a
+	height:100%;
+}
+
+.navbar{
+	height: 117px;
+	margin-bottom: 0px;
+}
+
+.bs-navbar-collapse{
+	font-size: 135%;
+	vertical-align: middle;
+	height: 117px;
+  	padding-top: 30px;
+
+}
+
+#slider {
+	background-color: #AA1258;
+	width: 100%;
+	height:400px;
+	/*background-image:url("images/bustia_consell-11.png");*/
+	
+}
+
+#message {
+	width: 100%;
+	background-color:#F2F2F2;
+}
+
+#message h3{
+	padding-top: 50px;
+  	height: 150px;
+	vertical-align: middle;
+}
+
+#coneix {
+	background-image:url("images/coneix_fons-09.png");
+	height:570px;
+	color:#1D70B6;
+	width: 100%;
+  	padding-left: 9%;
+  	padding-right: 9%;"
+}
+
+#coneix div p{
+	padding-top:15px;
+}
+
+#onesreunim{
+	background-image:url("images/onensreunim_fons-10.png");
+	width:100%;
+	height:130px;
+	padding-top:20px;
+	padding-bottom:20px
+}
+
+#logo{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#mapa{
+	width:100%;
+	height:500px;
+}
+
