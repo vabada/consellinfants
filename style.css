@@ -1,3 +1,5 @@
+html, body { height: 100%;  margin: 0; }
+
 #top {
 	background-color: #226999;
 	color:#ffffff;
@@ -5,4 +7,17 @@
 
 #myCarousel{
 	height:400px;
+}
+
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    width: 100%;
+    height: 100%;
+}
+
+* {
+ font-size: 100%;
+ font-family: 'Nunito', sans-serif;
 }
