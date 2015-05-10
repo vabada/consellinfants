@@ -17,19 +17,21 @@ and open the template in the editor.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slideshow.js"s></script>
         
     </head>
     <body>
 
+<img id="logo" src="images/logo.png"></img>
       <!-- Docs master nav -->
       <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+
     	  <div class="container" id="navbar-top">
     	    <div class="navbar-header">
     	      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -40,11 +42,11 @@ and open the template in the editor.
     	        <span class="icon-bar"></span>
     	        <span class="icon-bar"></span>
     	      </button>
-            <img id="logo" src="images/logo.png"></img>
+            
     	      <!--<a href="../" class="navbar-brand" style="color:white">Consell d'Infants</a>-->
     	    </div>
     	    <nav class="collapse navbar-collapse bs-navbar-collapse">
-    	      <ul class="nav navbar-nav navbar-right">
+    	      <ul class="nav navbar-nav navbar-right menu">
               <li><a href="index.html">El consell d’Infants</a></li>
     	        <li><a href="quehemfet.html">Què hem fet?</a></li>
     	        <li><a href="dretsdelsinfants.html">Drets dels infants</a></li>
@@ -55,20 +57,29 @@ and open the template in the editor.
     	  </div>
     	</header>
 
-      <div class="container" id="slider">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-3" style="height:100%">
-            <h2>Dret a la Participació</h2>
-            <p>L’infant té dret a dir el que pensai que tant la família com els adults i les autoritats tinguin en compte la seva opinió.</p>
-            <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-            <p style="font-size:8px;bottom:0px">20 Aniversari de la Convenció dels Drets dels Infants</p>
+      <!-- Example row of columns -->
+      <div class="slideshow" id="fading_div">
+        <figure>
+          <div class="text-feliu">
+            <div class="text-fixed">
+              <h2> El Consell d'Infants de Sant Feliu de Llobregat...</h2>
+            </div>
+            <div class="text-change">
+              <h2 id="text-change">representa més de 5000 infants al municipi d'entre 0 i 16 anys </h2>
+            </div>
+            <div class=text-button>
+            <h4 id="text-button"> <a href="quehemfet.html">Què ha fet el consell?</a></h4>
+            </div>
           </div>
-          <!--<div class="col-md-9">
-            <img src="image1.png"></img>
-         	</div>-->
-        </div>
-    	</div>
+            <img id="slide" src="images/slideshow/slideshow-1.png" width="100%" />
+            <div class="button-slider move" onclick="change()">
+              <span class="glyphicon glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+            </div>
+            <div class="button-slider move2" onclick="change()">
+              <span class="glyphicon glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            </div>
+        </figure>
+      </div>    	
 
     	<div class="container" id="message">
           <!-- Example row of columns -->
@@ -77,13 +88,13 @@ and open the template in the editor.
               <img src="logo.png"></img>
             </div>
             <div class="col-md-9" style="height:213px;">
-              <h3>“És un grup de nens i nenes que donem la nostra opinió sobre coses que volem que canviïn i coses que creiem que són importants per la ciutat pels infants.”</h3>
-              <p style="text-align:right;font-size:12px">Consell d’infants de Sant Feliu de Llobregat, 2008</p>
+              <h4>“És un grup de nens i nenes que donem la nostra opinió sobre coses que volem que canviïn i coses que creiem que són importants per la ciutat pels infants.”</h4>
+              <p>Consell d’infants de Sant Feliu de Llobregat, 2008</p>
            	</div>
           </div>
     	</div>
 
-      <div class="container" id="coneix" style="height:700px">
+      <div class="container" id="coneix">
         <div class="row" style="text-align:center">
           <h1>Coneix el Consell d’Infants</h1>
         </div>
@@ -115,21 +126,20 @@ and open the template in the editor.
       <div class="container" id="onesreunim">
 
           <div class="row" style="text-align:center;color:#ffffff">
-            <h1>On es reunim?</h1>
+            <h1>On ens reunim?</h1>
           </div>
       </div>
 
 
-      <div class="container" id="mapa">
+      <div class="container mapb" id="mapa">
           <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/albertramon.ln8db756/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYWxiZXJ0cmFtb24iLCJhIjoiYldpazBXOCJ9.KzXFvrzZzAZRA7tzNAqplg'></iframe>
       </div>
 
-      <div class="container" id="bustia">
+      <div class="container " id="bustia">
           <div class="row" style="text-align:center;color:#ffffff">
             <h1>Bústia de suggeriments</h1>
           </div>
-      </div>
-                
+      </div>               
        
     </body>
 </html>
