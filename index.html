@@ -24,6 +24,9 @@ and open the template in the editor.
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slideshow.js"s></script>
+
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
         
     </head>
     <body>
@@ -130,16 +133,29 @@ and open the template in the editor.
           </div>
       </div>
 
+      <div id='map'></div>
 
-      <div class="container mapb" id="mapa">
-          <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/albertramon.ln8db756/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYWxiZXJ0cmFtb24iLCJhIjoiYldpazBXOCJ9.KzXFvrzZzAZRA7tzNAqplg'></iframe>
-      </div>
+      <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoiYWxiZXJ0cmFtb24iLCJhIjoiYldpazBXOCJ9.KzXFvrzZzAZRA7tzNAqplg';
+        var map = L.mapbox.map('map', 'mapbox.streets', {
+          zoomControl: false
+        }).setView([41.383, 2.043], 16);
+
+        // Disable drag and zoom handlers.
+        //map.touchZoom.disable();
+        map.scrollWheelZoom.disable();
+
+        // Disable tap handler, if present.
+        //if (map.tap) map.tap.disable();
+      </script>
+      <!--<div class="container mapb" id="mapa" style="overflow:hidden">
+          <iframe width='100%' height='500px' scrolling="no" style="overflow:hidden" frameBorder='0' src='https://a.tiles.mapbox.com/v4/albertramon.ln8db756/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYWxiZXJ0cmFtb24iLCJhIjoiYldpazBXOCJ9.KzXFvrzZzAZRA7tzNAqplg'></iframe>
+      </div>-->
 
       <div class="container " id="bustia">
           <div class="row" style="text-align:center;color:#ffffff">
             <h1>Bústia de suggeriments</h1>
           </div>
-      </div>               
-       
+      </div>                       
     </body>
 </html>

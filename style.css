@@ -38,7 +38,7 @@ iframe {
 	position:absolute;
 	top: 30%;
     left: 50px;
-    padding-left: 5%
+    padding-left: 15%
 }
 
 .slideshow .text-fixed {
@@ -186,3 +186,6 @@ img {
 	padding-left:0px;
 	padding-right:0px;
 }
+
+
+#map {width:100%; height:100%;}

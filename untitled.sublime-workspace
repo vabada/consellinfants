@@ -348,6 +348,9 @@
 	],
 	"file_history":
 	[
+		"/home/abad/hdd/developement/albert_web/untitled.sublime-project",
+		"/home/abad/hdd/developement/albert_web/js/better-simple-slideshow.js",
+		"/home/abad/hdd/developement/albert_web/css/simple-slideshow-styles.css",
 		"/home/abad/hdd/work/immfly/kontron_installation.txt",
 		"/media/hdd/work/immfly/check_airplane_voice.sh",
 		"/home/abad/hdd/work/immfly/metrics/session/users_per_flight_v_luclea.py",
@@ -472,14 +475,11 @@
 		"/home/abad/hdd/temp/immfly/metrics/session/2015_01_31_events_lea.json",
 		"/home/abad/hdd/temp/immfly/metrics/views/views_deals_anna.txt",
 		"/home/abad/hdd/temp/immfly/metrics/views/views_report.txt",
-		"/var/www/html/immtelligence/views/2015_01_31_views_luc.json",
-		"/var/www/html/immtelligence/views/2015_01_31_views_lea.json",
-		"/media/hdd/temp/immtelligence/views/2015_01_31_views_lea.json",
-		"/home/abad/work/immfly/metrics/3g/log4.txt"
+		"/var/www/html/immtelligence/views/2015_01_31_views_luc.json"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -493,6 +493,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"slide",
+			"bús",
+			"500",
+			"slide",
+			"message",
+			"meesage",
+			"options",
 			"append",
 			"print_all",
 			"timed",
@@ -613,14 +620,7 @@
 			"nice264",
 			"c272e98fd02d722759a1",
 			"hash",
-			"&",
-			"getavi",
-			"format",
-			"media",
-			"ng-app",
-			"webgl",
-			"stats",
-			"div"
+			"&"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -759,7 +759,7 @@
 		[
 			[
 				"",
-				"/var/www/html/html5_ify.sublime-project"
+				"~/hdd/developement/albert_web/untitled.sublime-workspace"
 			]
 		],
 		"width": 380.0
