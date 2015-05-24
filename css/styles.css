@@ -1,167 +1,207 @@
-            .header{
-                height: 60px;
-                background-color: pink;
-            }
-            
-            .header img{
-                height: 60px;
-            }
-            
-            .menu-bar, .menu-bar li{
-                background-color: pink;
-                display: inline;
-            }
-            
-            .hamburger{
-                float:right;
-                line-height: 60px;
-                font-size: 24px;
-            }
-            
-            @media (max-width: 767px){
-                .menu-bar, .menu-bar li{
-                    display: block;
-                }
-                
-                .menu-bar{
-                    padding-left: 60px;
-                }
-            }
-            
-            .slider{
-                position: relative;
-                min-height: 250px;
-                color: white;
-            }
-            
-            .slider h2{
-                font-size: 24px;
-            }
-            
-            .slider h3{
-                font-size: 18px;
-            }
-            
-            .slider .text{
-                min-height: 38px;
-            }
-            
-            .claim{
-                padding-left: 20px;
-            }
-            
-            .claim h2{
-                margin-bottom: 30px;
-            }
-            
-            .claim h3{
-                margin-bottom: 40px;
-            }
-            
-            .slider-button{
-                background-color: white;
-                padding: 10px 20px;
-                border-radius: 16px;
-                font-weight: bold;
-            }
-            
-            @media(min-width: 768px){
-                .claim{
-                    padding-left: 50px;
-                    margin-top: 100px;
-                }
-            }
-            
-            .youtube-video{
-                padding: 0;
-            }
-            
-            .filosofia{
-                background-image: url(images/coneix_fons-09.png);
-                background-size: cover;
-                padding-bottom: 80px;
-            }
-            
-            .filosofia img{
-                max-width: 100%;
-            }
-            
-            .filosofia .title{
-                text-align: center;
-            }
-            
-            .on-ens-reunim{
-                min-height: 100px;
-                text-align: center;
-                background-image: url(images/onensreunim_fons-10.png);
-                background-size: cover;
-                color: white;
-            }
-            
-            .on-ens-reunim h1{
-                line-height: 100px;
-            }
-            
-            .mapa{
-                padding: 0;
-                height: 500px;
-            }
-            
-            .mapa iframe{
-                height: 500px;
-            }
-            
-            @media(max-width: 767px){
-                .mapa, .mapa iframe{
-                    height: 200px;
-                }
-            }
-            
-            .footer{
-                padding-top: 50px;
-                height: 350px;
-                background-color: #ececeb;
-            }
-            
-            .sant-feliu img{
-                width: 100px;
-            }
-            
-            .sant-feliu{
-                text-align: center;
-            }
-            
-            .glyphicon-menu-left{
-                position: absolute;
-                top: 50%;
-                left: 10px;
-                font-size: 18px;
-            }
-            
-            .glyphicon-menu-left:hover, .glyphicon-menu-right:hover{
-                cursor: pointer;
-                color: #1d70b7;
-            }
-            
-            .glyphicon-menu-right{
-                position: absolute;
-                top: 50%;
-                right: 10px;
-                font-size: 18px;
-            }
-            
-            .next-slide, .slide{
-                position: absolute; 
-                height: 100%; 
-                width: 100%; 
-                background-size: 70%;
-                background-repeat: no-repeat;
-                background-image: url(images/slideshow/slideshow-1.png);
-                background-position-y: 100%;
-                background-position-x: 100%;
-            }
-            
-            .slide{
-                opacity: 1;
-                background-color: #FF9900;
-            }
+* { 
+    font-size: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header{
+    text-align:right;
+    height: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.menu-bar li a{
+    color:white;
+    padding-left: 5%;
+}
+
+.menu-bar li a:hover{
+    color: #1d70b7;
+    text-decoration: none;
+}
+
+.header{
+    background-color: #FF9900;
+}
+
+.header img{
+    height: 60px;
+}
+
+.menu-bar{
+    padding-top: 20px
+}
+
+.menu-bar, .menu-bar li{
+    display: inline;
+}
+
+.message img{
+    float:left;
+}
+
+.message div h4{
+    margin-top: 5%;
+}
+
+.message div p{
+    margin-top: 5%;
+}
+
+#logo{
+    float:left;
+}
+
+.hamburger{
+    float:right;
+    line-height: 60px;
+    font-size: 24px;
+}
+
+@media (max-width: 767px){
+    .menu-bar, .menu-bar li{
+        display: block;
+    }
+    
+    .menu-bar{
+        padding-left: 60px;
+    }
+}
+
+.slider{
+    position: relative;
+    min-height: 250px;
+    color: white;
+}
+
+.slider h2{
+    font-size: 24px;
+}
+
+.slider h3{
+    font-size: 18px;
+}
+
+.slider .text{
+    min-height: 38px;
+}
+
+.claim{
+    padding-left: 20px;
+}
+
+.claim h2{
+    margin-bottom: 30px;
+}
+
+.claim h3{
+    margin-bottom: 40px;
+}
+
+.slider-button{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+@media(min-width: 768px){
+    .claim{
+        padding-left: 50px;
+        margin-top: 100px;
+    }
+}
+
+.youtube-video{
+    padding: 0;
+}
+
+.filosofia{
+    background-image: url(images/coneix_fons-09.png);
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+.filosofia img{
+    max-width: 100%;
+}
+
+.filosofia .title{
+    text-align: center;
+}
+
+.on-ens-reunim{
+    min-height: 100px;
+    text-align: center;
+    background-image: url(images/onensreunim_fons-10.png);
+    background-size: cover;
+    color: white;
+}
+
+.on-ens-reunim h1{
+    line-height: 100px;
+}
+
+.mapa{
+    padding: 0;
+    height: 500px;
+}
+
+.mapa iframe{
+    height: 500px;
+}
+
+@media(max-width: 767px){
+    .mapa, .mapa iframe{
+        height: 200px;
+    }
+}
+
+.footer{
+    padding-top: 50px;
+    height: 350px;
+    background-color: #ececeb;
+}
+
+.sant-feliu img{
+    width: 100px;
+}
+
+.sant-feliu{
+    text-align: center;
+}
+
+.glyphicon-menu-left{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 18px;
+}
+
+.glyphicon-menu-left:hover, .glyphicon-menu-right:hover{
+    cursor: pointer;
+    color: #1d70b7;
+}
+
+.glyphicon-menu-right{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 18px;
+}
+
+.next-slide, .slide{
+    position: absolute; 
+    height: 100%; 
+    width: 100%; 
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url(images/slideshow/slideshow-1.png);
+    background-position-y: 100%;
+    background-position-x: 100%;
+}
+
+.slide{
+    opacity: 1;
+    background-color: #FF9900;
+}

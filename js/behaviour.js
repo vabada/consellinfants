@@ -26,7 +26,7 @@ function gotoSlide(slide_number){
     if(slide_number > 5) slide_number = 1;
     
     
-    var background = "images/slideshow/slideshow-" + slide_number + ".png"
+    var background = "css/images/slideshow/slideshow-" + slide_number + ".png"
     var text = texts[slide_number-1];
     var color = colors[slide_number-1];
     
@@ -45,7 +45,8 @@ function gotoSlide(slide_number){
     
     $('.slider .next-slide').css('background-image', 'url('+background+')');
     $('.slider .next-slide').css('background-color', color);
-
+    $('.header').css('background-color', color);
+    
     $('.slider .glyphicon-menu-left').hide();
     $('.slider .glyphicon-menu-right').hide();
 
@@ -56,8 +57,7 @@ function gotoSlide(slide_number){
         
         $('.slider .slide').css('background-image', 'url('+background+')');
         $('.slider .slide').css('background-color', color);
-        $('.slider .slide').show();
-        
+        $('.slider .slide').show();        
         
     });
     
