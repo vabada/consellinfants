@@ -13,184 +13,11 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
         <link href="https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
 
     </head>
     
-
-    
     <body>
-
-        <style>
-            .header{
-                height: 60px;
-                background-color: pink;
-            }
-            
-            .header img{
-                height: 60px;
-            }
-            
-            .menu-bar, .menu-bar li{
-                background-color: pink;
-                display: inline;
-            }
-            
-            .hamburger{
-                float:right;
-                line-height: 60px;
-                font-size: 24px;
-            }
-            
-            @media (max-width: 767px){
-                .menu-bar, .menu-bar li{
-                    display: block;
-                }
-                
-                .menu-bar{
-                    padding-left: 60px;
-                }
-            }
-            
-            .slider{
-                position: relative;
-                min-height: 250px;
-                color: white;
-            }
-            
-            .slider h2{
-                font-size: 24px;
-            }
-            
-            .slider h3{
-                font-size: 18px;
-            }
-            
-            .slider .text{
-                min-height: 38px;
-            }
-            
-            .claim{
-                padding-left: 20px;
-            }
-            
-            .claim h2{
-                margin-bottom: 30px;
-            }
-            
-            .claim h3{
-                margin-bottom: 40px;
-            }
-            
-            .slider-button{
-                background-color: white;
-                padding: 10px 20px;
-                border-radius: 16px;
-                font-weight: bold;
-            }
-            
-            @media(min-width: 768px){
-                .claim{
-                    padding-left: 50px;
-                    margin-top: 100px;
-                }
-            }
-            
-            .youtube-video{
-                padding: 0;
-            }
-            
-            .filosofia{
-                background-image: url(images/coneix_fons-09.png);
-                background-size: cover;
-                padding-bottom: 80px;
-            }
-            
-            .filosofia img{
-                max-width: 100%;
-            }
-            
-            .filosofia .title{
-                text-align: center;
-            }
-            
-            .on-ens-reunim{
-                min-height: 100px;
-                text-align: center;
-                background-image: url(images/onensreunim_fons-10.png);
-                background-size: cover;
-                color: white;
-            }
-            
-            .on-ens-reunim h1{
-                line-height: 100px;
-            }
-            
-            .mapa{
-                padding: 0;
-                height: 500px;
-            }
-            
-            .mapa iframe{
-                height: 500px;
-            }
-            
-            @media(max-width: 767px){
-                .mapa, .mapa iframe{
-                    height: 200px;
-                }
-            }
-            
-            .footer{
-                padding-top: 50px;
-                height: 350px;
-                background-color: #ececeb;
-            }
-            
-            .sant-feliu img{
-                width: 100px;
-            }
-            
-            .sant-feliu{
-                text-align: center;
-            }
-            
-            .glyphicon-menu-left{
-                position: absolute;
-                top: 50%;
-                left: 10px;
-                font-size: 18px;
-            }
-            
-            .glyphicon-menu-left:hover, .glyphicon-menu-right:hover{
-                cursor: pointer;
-                color: #1d70b7;
-            }
-            
-            .glyphicon-menu-right{
-                position: absolute;
-                top: 50%;
-                right: 10px;
-                font-size: 18px;
-            }
-            
-            .next-slide, .slide{
-                position: absolute; 
-                height: 100%; 
-                width: 100%; 
-                background-size: 70%;
-                background-repeat: no-repeat;
-                background-image: url(images/slideshow/slideshow-1.png);
-                background-position-y: 100%;
-                background-position-x: 100%;
-            }
-            
-            .slide{
-                opacity: 1;
-                background-color: #FF9900;
-            }
-            
-        </style>   
-
         
         <div class="container-fluid">
             <div class="row header">
@@ -318,42 +145,11 @@ and open the template in the editor.
             
         </div>
 
-<!--
-	
-
-
-
-
-
-      
-
-
-
-      <div class="container " id="bustia">
-          <div class="row" style="text-align:center;color:#ffffff">
-            <h1>Bústia de suggeriments</h1>
-          </div>
-      </div>    
-     --> 
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
 
         <script src='js/behaviour.js'></script>
-        
-        <script>
-          L.mapbox.accessToken = 'pk.eyJ1IjoiYWxiZXJ0cmFtb24iLCJhIjoiYldpazBXOCJ9.KzXFvrzZzAZRA7tzNAqplg';
-          var map = L.mapbox.map('map', 'mapbox.streets', {
-            zoomControl: false
-          }).setView([41.383, 2.043], 16);
-
-          // Disable drag and zoom handlers.
-          //map.touchZoom.disable();
-          map.scrollWheelZoom.disable();
-
-          // Disable tap handler, if present.
-          //if (map.tap) map.tap.disable();
-        </script>        
 
     </body>
 </html>
