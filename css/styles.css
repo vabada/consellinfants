@@ -157,7 +157,46 @@
     color: white;
 }
 
-.on-ens-reunim h1{
+.que-hem-fet{
+    min-height: 100px;
+    text-align: center;
+    background-image: url(images/banda_lila-14-02-03.png);
+    background-size: cover;
+    color: white;
+}
+
+.consulta-encarrecs{
+    min-height: 100px;
+    text-align: center;
+    background-image: url(images/banda_vermella-14-02.png);
+    background-size: cover;
+    color: white;
+}
+
+.activitats{
+    min-height: 100px;
+    text-align: center;
+    background-image: url(images/banda_blava_3-03-03.png);
+    background-size: cover;
+    color: white;
+}
+
+.activitats-title{
+    text-align: center;
+    padding-top:5%;
+    color:#1D70B7;
+}
+
+.data-interaction{
+    min-height: 600px;
+    background-color: #FFDF85;
+}
+
+.encarrecs{
+    height:450px;    
+}
+
+.section-row h1{
     line-height: 100px;
 }
 
@@ -178,12 +217,13 @@
 
 .footer{
     padding-top: 50px;
-    height: 350px;
     background-color: #ececeb;
+    color:#990066;
+    line-height: 65%;
 }
 
 .sant-feliu img{
-    width: 100px;
+    width: 150px;
 }
 
 .sant-feliu{
@@ -209,6 +249,33 @@
     font-size: 18px;
 }
 
+.numero-vegadas{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width:50%;
+}
+
+.filer-any{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color:#1d70b7;
+}
+
+.activitats-legend{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    line-height: 60%;
+    width:50%;
+}
+
+.activitats-legend p{
+    margin-left: 5%;
+    margin-top:1px;
+}
+
 .next-slide, .slide{
     position: absolute; 
     height: 100%; 
@@ -218,6 +285,22 @@
     background-image: url(images/slideshow/slideshow-1.png);
     background-position-y: 100%;
     background-position-x: 72%;
+}
+
+.activitats-legend-png{
+    float:left;
+    width:15px;
+}
+
+.activitats-image{
+    position: absolute; 
+    height: 100%; 
+    width: 100%; 
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-image: url(images/activitats/activitats-1.png);
+    background-position-y: 10%;
+    background-position-x: 50%;
 }
 
 .logo2{
@@ -244,16 +327,28 @@
     padding-left: 15%;
 }
 
-.footer{
-    color:#990066;
-    line-height: 65%;
-}
-
 hr{
     margin-top:2%;
     border-color:#990066;
 }
 
 .credits{
-    padding-top: 1%
+    padding-top: 1%;
+    padding-bottom: 8%;
+}
+
+.footer-sections{
+    padding-bottom:5%;
+}
+
+.copyright{
+    float:left;
+}
+
+.disenny{
+    float:right;
+}
+
+.footer-sections div div a{
+    color:inherit;
 }

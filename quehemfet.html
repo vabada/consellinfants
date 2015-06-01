@@ -13,20 +13,25 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
         <link href="https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
         <link href="css/styles.css" rel="stylesheet">
+
     </head>
     
     <body>
         
         <div class="container-fluid">
+            
             <div class="row header">
                 <div class="col-xs-12">
-                    <img src="images/logo.png" alt="">
+                    <a href="index.html">
+                        <img id="logo" class="top-slider" src="css/images/logo.png" alt="">
+                    </a>
                     
                     <span class="hidden-sm hidden-md hidden-lg glyphicon glyphicon-menu-hamburger hamburger" aria-hidden="true"></span>
 
                     <ul class="hidden-xs menu-bar">
-                        <li><a href="index.html">El consell d’Infants</a></li>
+                        <li><a href="index.html">El Consell d’Infants</a></li>
                         <li><a href="quehemfet.html">Què hem fet?</a></li>
                         <li><a href="dretsdelsinfants.html">Drets dels infants</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -34,24 +39,96 @@ and open the template in the editor.
                     </ul>
                 </div>
             </div>
-            
-            <div class='row'>
-                <div class='col-xs-12 mapa'>
-                    <iframe width='100%' frameBorder='0' src='https://a.tiles.mapbox.com/v4/albertramon.ln8db756/attribution,geocoder,share.html?access_token=pk.eyJ1IjoiYWxiZXJ0cmFtb24iLCJhIjoiYldpazBXOCJ9.KzXFvrzZzAZRA7tzNAqplg'></iframe>
+
+            <div class="row que-hem-fet section-row">
+                <div class='col-xs-12'>
+                    <h1>Què hem fet al municipi?</h1>
                 </div>
             </div>
             
-            <div class="row footer">
+            
+            <div class='row'>
+                <div class='col-xs-12 mapa'>
+                    <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/albertramon.lm8n3joc/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiYWxiZXJ0cmFtb24iLCJhIjoiYldpazBXOCJ9.KzXFvrzZzAZRA7tzNAqplg'></iframe>
+                </div>
+            </div>
+
+            <div class="row consulta-encarrecs section-row">
                 <div class='col-xs-12'>
+                    <h1>Consulta d'encàrrecs anuals?</h1>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-xs-12 '>
+                    <div class='row data-interaction encarrecs'>
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="row activitats section-row">
+                <div class='col-xs-12'>
+                    <h1>Activitats del Consell d'Infants</h1>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-xs-12 '>
+                    <div class='row data-interaction'>
+                        <p class="activitats-title">1999-2000</p>
+                        <div class='activitats-image'></div>
+                        <div class='data-filter'>
+                        </div>
+                    </div>
+                    <div class="activitats-legend">
+                        <img class="activitats-legend-png" src="css/images/triangles-16.png"><p style="color:#006838">Accions comunicatives</p><br>
+                        <img class="activitats-legend-png" src="css/images/triangles-17.png"><p style="color:#F79737">Foment de la participaciò</p><br>
+                        <img class="activitats-legend-png" src="css/images/triangles-19.png"><p style="color:#5C456A">Actes públics</p><br>
+                        <img class="activitats-legend-png" src="css/images/triangles-18.png"><p style="color:#3C2315">Trobades polítiques</p><br>
+                    </div>
+                    <div class="numero-vegadas">
+                        <p style="float:left;margin-right:15px">Número de vegades realitzades</p>
+                        <img class="numero-vegadas-png" src="css/images/triangles-20.png">
+                    </div>
+                    <div class="filer-any">
+                        <p style="float:left;margin-right:15px">Quin any vols consultar?</p><br>
+                        <select onchange="showImage(this)" id="activitats-select">
+                          <option value="1">1999-2000</option>
+                          <option value="2">2000-2001</option>
+                          <option value="3">2001-2002</option>
+                          <option value="4">2002-2003</option>
+                          <option value="5">2003-2004</option>
+                          <option value="6">2004-2005</option>
+                          <option value="7">2005-2006</option>
+                          <option value="8">2006-2007</option>
+                          <option value="9">2007-2008</option>
+                          <option value="10">2008-2009</option>
+                          <option value="11">2009-2010</option>
+                          <option value="12">2010-2011</option>
+                          <option value="13">2011-2012</option>
+                          <option value="14">2012-2013</option>
+                          <option value="15">2013-2014</option>
+                        </select>
+                    </div>
+                    <span class="glyphicon glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon glyphicon-menu-right" aria-hidden="true"></span>  
+                </div> 
+            </div>
+            
+            <div class="row footer content">
+                <div class='col-xs-12 footer-sections'>
                     <div class='row'>
                         <div class='col-xs-12 col-sm-3'>
-                            <p>El Consell d'infants</p>
-                            <p>Què hem fet?</p>
-                            <p>Els nostres drets</p>
+                            <p><a href="index.html">El Consell d’Infants</a></p>
+                            <p><a href="quehemfet.html">Què hem fet?</a></p>
+                            <p><a href="dretsdelsinfants.html">Drets dels infants</a></p>
                         </div>
+
+
                         <div class='col-xs-12 col-sm-3'>
-                            <p>Blog</p>
-                            <p>Bústia</p>
+                            <p><a href="blog.html" style="font-weight: bold;">Blog</a></p>
+                            <p><a href="bustia.html" style="font-weight: bold;">Bústia</a></p>
                         </div>
                         <div class='col-xs-12 col-sm-3'>
                             <p>Plaça de la Vila, 1</p>
@@ -60,13 +137,14 @@ and open the template in the editor.
                             <p>cisantfeliu@santfeliu.cat</p>
                         </div>
                         <div class='col-xs-12 col-sm-3 sant-feliu'>
-                            <img src='images/logo_ajuntament-17.png'>
+                            <img src='css/images/logo_ajuntament-17.png'>
                         </div>
                     </div>
                 </div>
-                <div class='col-xs-12'>
-                    <p>Copyright 2015, Consell d'infants de Sant Feliu de Llobregat</p>
-                    <p>Disseny: Albert Ramon Mulet</p>
+                <HR WIDTH="100%">
+                <div class='col-xs-12 credits'>
+                    <p class="copyright">Copyright 2015, Consell d'infants de Sant Feliu de Llobregat</p>
+                    <p class="disenny">Disseny: Albert Ramon Mulet</p>
                 </div>
 
             </div>
@@ -77,7 +155,7 @@ and open the template in the editor.
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
 
-        <script src='js/behaviour.js'></script>
+        <script src='js/activitats.js'></script>
 
     </body>
 </html>
