@@ -5,14 +5,14 @@
 
 .header{
     text-align:right;
-    height: 60px;
+    height: 100px;
     padding-left: 0px;
     padding-right: 0px;
 }
 
 .menu-bar li a{
     color:white;
-    padding-left: 5%;
+    padding-left: 3%;
 }
 
 .menu-bar li a:hover{
@@ -22,10 +22,17 @@
 
 .header{
     background-color: #FF9900;
+    /*background-color: inherit;*/
 }
 
 .header img{
-    height: 60px;
+    height: 100px;
+}
+
+.header div ul{
+    height:100%;
+    padding-right:21%;
+    color:red;
 }
 
 .menu-bar{
@@ -36,16 +43,20 @@
     display: inline;
 }
 
+.message{
+    height: 180px;
+}
+
 .message img{
     float:left;
 }
 
 .message div h4{
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .message div p{
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 #logo{
@@ -84,10 +95,17 @@
 
 .slider .text{
     min-height: 38px;
+    font-weight: 900;
+}
+
+.slider .title{
+    font-weight: 100;
 }
 
 .claim{
-    padding-left: 20px;
+    padding-left: 18px;
+    max-width:40%;
+    position:relative
 }
 
 .claim h2{
@@ -117,6 +135,7 @@
 }
 
 .filosofia{
+    padding-top:30px;
     background-image: url(images/coneix_fons-09.png);
     background-size: cover;
     padding-bottom: 80px;
@@ -194,14 +213,47 @@
     position: absolute; 
     height: 100%; 
     width: 100%; 
-    background-size: 70%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-image: url(images/slideshow/slideshow-1.png);
     background-position-y: 100%;
-    background-position-x: 100%;
+    background-position-x: 72%;
+}
+
+.logo2{
+    max-height: 11%; 
+    max-width: 11%; 
+    padding-top:3%;
+}
+
+.message-text{
+    padding-left:25%;
 }
 
 .slide{
     opacity: 1;
     background-color: #FF9900;
+}
+
+.content{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.top-slider{
+    padding-left: 15%;
+}
+
+.footer{
+    color:#990066;
+    line-height: 65%;
+}
+
+hr{
+    margin-top:2%;
+    border-color:#990066;
+}
+
+.credits{
+    padding-top: 1%
 }

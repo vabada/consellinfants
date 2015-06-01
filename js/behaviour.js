@@ -17,7 +17,7 @@ var interval = setInterval(function(){
 
 function resizeSlider(){
     var height = $(window).height();
-    $('.slider').height(height * 0.75);
+    $('.slider').height(height * 0.9);
 }
 
 function gotoSlide(slide_number){
@@ -45,7 +45,7 @@ function gotoSlide(slide_number){
     
     $('.slider .next-slide').css('background-image', 'url('+background+')');
     $('.slider .next-slide').css('background-color', color);
-    $('.header').css('background-color', color);
+    //$('.header').css('background-color', color);
     
     $('.slider .glyphicon-menu-left').hide();
     $('.slider .glyphicon-menu-right').hide();
