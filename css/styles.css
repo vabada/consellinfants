@@ -39,6 +39,10 @@
     padding-top: 20px
 }
 
+.menu-div{
+    padding-top:3%;
+}
+
 .menu-bar, .menu-bar li{
     display: inline;
 }
