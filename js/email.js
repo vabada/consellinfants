@@ -23,5 +23,4 @@ $(".blackout").click(endBlackout); // close if click outside of popup
 $(".closeBox").click(endBlackout); // close if close btn clicked
 
 // Automatically trigger the pop-up after 10 seconds
-setTimeout( strtBlackout, 10000);
 });
