@@ -64,6 +64,54 @@ and open the template in the editor.
             <div class='row'>
                 <div class='col-xs-12 '>
                     <div class='row data-interaction encarrecs'>
+                        <div class="encarrecs-texts">
+                            <p>1999-2000 Estudi dels espais de joc (i)</p><hr class='hr_activitats'>
+                            <p>2000-2001 Planificació de l'Estudi dels itineraris escolars(i)</p><hr class='hr_activitats'>
+                            <p>2001-2002 Planificació de l'Estudi dels itineraris escolars(ii)</p><hr class='hr_activitats'>
+                            <p>2002-2003 Els espais de lleure i d'oci pels infants i adolescents de dotze a setze anys</p><hr class='hr_activitats'>
+                            <p>2003-2004 Els espais de lleure i d'oci pels infants i adolescents de dotze a setze anys</p><hr class='hr_activitats'>
+                            <p>2004-2005 Disseny de la plaça del costat del c/ Jaume Ribas (urbanisme)</p><hr class='hr_activitats'>
+                            <p>2005-2006 Disseny de la plaça del costat del c/ Jaume Ribas (urbanisme)</p><hr class='hr_activitats'>
+                            <p>2006-2007 La millora de les eines de comunicació del consell d'Infants (1ª fase)</p><hr class='hr_activitats'>
+                            <p>2007-2008 La millora de les eines de comunicació del consell d'Infants (2ª fase)</p><hr class='hr_activitats'>
+                            <p>2008-2009 Donar a conèixer a la ciutadania de Sant Feliu de Llobregat la Convenció dels Drets dels Infants</p><hr class='hr_activitats'>
+                            <p>2009-2010 Difusió dels hàbits saludables</p><hr class='hr_activitats'>
+                            <p>2010-2011 Activitats pels nens del centre cívic </p><hr class='hr_activitats'>
+                            <p>2011-2012 Promoció de la Cultura popular del municipi</p><hr class='hr_activitats'>
+                            <p>2012-2013 Repensar el Consell d'Infants</p><hr class='hr_activitats'>
+                            <p>2013-2014 Reforma del Parc Llobregat</p>
+                        </div>
+                    </div>
+                    <div class="filer-encarrecs-ambit">
+                        <p style="float:left;margin-left:15px">Quin ambit</p><br>
+                        <select onchange="filter('ambit',this)" id="encarrecs-ambit">
+                          <option value="1">Seguretat</option>
+                          <option value="2">Oci i Temps lliure</option>
+                          <option value="3">Urbanisme</option>
+                          <option value="4">Comunicació</option>
+                          <option value="5">Salut</option>
+                          <option value="6">Cultura i tradicions</option>
+                        </select>
+                    </div>
+                    <div class="filer-any">
+                        <p style="float:left;margin-right:15px">Quin any vols consultar?</p><br>
+                        <select onchange="filter('anys',this)" id="encarrecs-anys">
+                          <option value="1">1999-2000</option>
+                          <option value="2">2000-2001</option>
+                          <option value="3">2001-2002</option>
+                          <option value="4">2002-2003</option>
+                          <option value="5">2003-2004</option>
+                          <option value="6">2004-2005</option>
+                          <option value="7">2005-2006</option>
+                          <option value="8">2006-2007</option>
+                          <option value="9">2007-2008</option>
+                          <option value="10">2008-2009</option>
+                          <option value="11">2009-2010</option>
+                          <option value="12">2010-2011</option>
+                          <option value="13">2011-2012</option>
+                          <option value="14">2012-2013</option>
+                          <option value="15">2013-2014</option>
+                        </select>
                     </div>
                 </div> 
             </div>
@@ -77,7 +125,7 @@ and open the template in the editor.
 
             <div class='row'>
                 <div class='col-xs-12 '>
-                    <div class='row data-interaction'>
+                    <div class='row data-interaction activitats-interaction'>
                         <p class="activitats-title">1999-2000</p>
                         <div class='activitats-image'></div>
                         <div class='data-filter'>
@@ -117,6 +165,32 @@ and open the template in the editor.
                     <span class="glyphicon glyphicon glyphicon-menu-right" aria-hidden="true"></span>  
                 </div> 
             </div>
+
+            <div class='row'>
+                <div class='col-xs-12 bustia content'>
+                    <div class="bustia-texts" style="color:white;max-width:20%;margin-top:5%;margin-bottom:5%;float:left">
+                        <h3 style="font-weight:bold">Bústia de suggeriments</h3>
+                        <p style="margin-top:30px">Aquest espai està reservat per a tots els nens i nenes de Sant Feliu de Llobregat que vuilquin fer algun suggeriment, propostes, queixes, agraïments o felicitacions sobre la ciutat de Sant Feliu de o el Consell d'Infants</p>
+                        <p style="font-weight:bold"> Moltes Gràcies per participar</p>
+                    </div>
+
+                    <div class="bustia-form" style="color:grey;width:60%;margin-top:10%;margin-bottom:5%;float:right">
+                      <form role="form">
+                        <div class="form-group border">
+                          <input class="form-control" placeholder="Escriu el teu nom i cognoms">
+                        </div>
+                        <div class="form-group border">
+                          <input class="form-control" placeholder="Quin és el teu barri?">
+                        </div>
+                        <div>
+                          <textarea class="form-control border" style="height:200px;margin-bottom:5%" rows="5" id="comment" placeholder="Escriu el teu missatge"></textarea>
+                        </div>
+                        <p style="color:white;float:right;font-weight:lighter;margin-top:2%">Rebràs un missatge quan s'hagi enviat el missatge</p>
+                      </form>
+                        <a class="btn btn-default ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b" style="background-color:#AB1158;color:white;margin-top:10px;paddin-left:5px" id="btn1" onclick="sendEmail()">CLICA PER ENVIAR</a>
+                    </div>
+                </div>
+            </div>
             
             <div class="row footer content">
                 <div class='col-xs-12 footer-sections'>
@@ -153,11 +227,25 @@ and open the template in the editor.
             
         </div>
 
+        <div class="blackout">
+        </div>
+        <div class="msgbox">
+        <div class="closeBox">
+        Tancar</div>
+        <br /><br /><br /><br />
+        <center>
+        <h4>Felicitats, hem rebut el teu comentari :)</h4><br />
+        <p> Canvía la ciutat amb el Consell d'Infants! </p>
+        </form>
+        </center>
+        </div>
+
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
 
         <script src='js/activitats.js'></script>
+        <script src='js/email.js'></script>
 
     </body>
 </html>

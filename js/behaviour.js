@@ -83,6 +83,3 @@ $('.glyphicon-menu-right').click(function(){
 $('.hamburger').click(function(){
    $('.menu-bar').toggleClass('hidden-xs');
 });
-
-
-
