@@ -47,10 +47,6 @@
     display: inline;
 }
 
-.message{
-    height: 180px;
-}
-
 .message img{
     float:left;
 }
@@ -108,7 +104,6 @@
 
 .claim{
     padding-left: 18px;
-    max-width:40%;
     position:relative
 }
 
@@ -122,9 +117,14 @@
 
 .slider-button{
     background-color: white;
-    padding: 10px 20px;
     border-radius: 16px;
     font-weight: bold;
+    position:absolute;
+    bottom:30%;
+    left:19%;
+    color:#FF9900;
+    padding: 10px 20px;
+
 }
 
 @media(min-width: 768px){
@@ -323,13 +323,8 @@
 }
 
 .logo2{
-    max-height: 11%; 
-    max-width: 11%; 
-    padding-top:3%;
-}
-
-.message-text{
-    padding-left:25%;
+    max-width: 15%;
+    height: auto;
 }
 
 .slide{
@@ -464,7 +459,18 @@ hr{
   margin-bottom :3%;
 }
 
+.bustia-texts{
+    color:white;
+    margin-top:5%;
+    margin-bottom:5%;
+}
 
+.bustia-form{
+    color:grey;
+    margin-top:10%;
+    margin-bottom:5%;
+    float:right;
+}
 
 .blackout {
 background-color:#000;
