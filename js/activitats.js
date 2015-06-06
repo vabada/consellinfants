@@ -79,7 +79,7 @@ function gotoSlide(slide_number){
     if(slide_number > 15) slide_number = 1;
     
     console.log(current_slide);
-    var background = "css/images/activitats/activitats-" + slide_number + ".png"
+    var background = "images/activitats/activitats-" + slide_number + ".png"
     $('.activitats-image').css('background-image', 'url('+background+')');
 
     var text = years[slide_number-1];

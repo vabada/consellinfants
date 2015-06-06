@@ -140,7 +140,7 @@
 
 .filosofia{
     padding-top:30px;
-    background-image: url(images/coneix_fons-09.png);
+    background-image: url(../images/coneix_fons-09.png);
     background-size: cover;
     padding-bottom: 80px;
 }
@@ -156,7 +156,7 @@
 .on-ens-reunim{
     min-height: 100px;
     text-align: center;
-    background-image: url(images/onensreunim_fons-10.png);
+    background-image: url(../images/onensreunim_fons-10.png);
     background-size: cover;
     color: white;
 }
@@ -164,7 +164,7 @@
 .que-hem-fet{
     min-height: 100px;
     text-align: center;
-    background-image: url(images/banda_lila-14-02-03.png);
+    background-image: url(../images/banda_lila-14-02-03.png);
     background-size: cover;
     color: white;
 }
@@ -172,7 +172,7 @@
 .consulta-encarrecs{
     min-height: 100px;
     text-align: center;
-    background-image: url(images/banda_vermella-14-02.png);
+    background-image: url(../images/banda_vermella-14-02.png);
     background-size: cover;
     color: white;
 }
@@ -180,7 +180,7 @@
 .activitats{
     min-height: 100px;
     text-align: center;
-    background-image: url(images/banda_blava_3-03-03.png);
+    background-image: url(../images/banda_blava_3-03-03.png);
     background-size: cover;
     color: white;
 }
@@ -301,7 +301,7 @@
     width: 100%; 
     background-size: 60%;
     background-repeat: no-repeat;
-    background-image: url(images/slideshow/slideshow-1.png);
+    background-image: url(../images/slideshow/slideshow-1.png);
     background-position-y: 100%;
     background-position-x: 72%;
 }
@@ -317,7 +317,7 @@
     width: 100%; 
     background-size: 40%;
     background-repeat: no-repeat;
-    background-image: url(images/activitats/activitats-1.png);
+    background-image: url(../images/activitats/activitats-1.png);
     background-position-y: 10%;
     background-position-x: 50%;
 }
@@ -374,7 +374,7 @@ hr{
 
 
 .bustia{
-    background-image: url(images/bustia_consell-11.png);
+    background-image: url(../images/bustia_consell-11.png);
     background-size: cover;
 }
 
