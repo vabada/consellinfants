@@ -26,7 +26,7 @@ function gotoSlide(slide_number){
     if(slide_number > 5) slide_number = 1;
     
     
-    var background = "css/images/slideshow/slideshow-" + slide_number + ".png"
+    var background = "images/slideshow/slideshow-" + slide_number + ".png"
     var text = texts[slide_number-1];
     var color = colors[slide_number-1];
     
